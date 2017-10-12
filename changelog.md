@@ -12,3 +12,11 @@ Release Date: 2017-10-12
 	- created changelog (TE)
 
 ### Updated 
+
+## *Version 1.0.1*
+Release Date: 2017-10-12
+
+### Added
+    - models/Tasks.php: added task model (TE)
+### Updated 
+    - config/autoload.php: preloading model (TE)
