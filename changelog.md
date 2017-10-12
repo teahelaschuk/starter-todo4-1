@@ -20,3 +20,14 @@ Release Date: 2017-10-12
     - models/Tasks.php: added task model (TE)
 ### Updated 
     - config/autoload.php: preloading model (TE)
+    
+## *Version 1.0.2*
+Release Date: 2017-10-12
+
+### Added
+    
+### Updated 
+    - views/homepage.php updated to track the amount of issues and list the issues (NM)
+    - core/MY_Controller.php updated the render (NM)
+    - controllers/Welcome.php updated to allow connection to views/homepage.php 
+    and update tasks and create a list of tasks (NM)
