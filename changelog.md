@@ -1,4 +1,4 @@
-#Change Log
+# Change Log
 
 Team membership:  Teah Elaschuk (Captain) &  Nathan Miles 
 Team conventions: Allman notation, markdown for changelog
@@ -11,8 +11,6 @@ Release Date: 2017-10-12
 	- created starter project (TE)
 	- created changelog (TE)
 
-### Updated 
-
 ## *Version 1.0.1*
 Release Date: 2017-10-12
 
@@ -23,11 +21,22 @@ Release Date: 2017-10-12
     
 ## *Version 1.0.2*
 Release Date: 2017-10-12
-
-### Added
     
 ### Updated 
     - views/homepage.php updated to track the amount of issues and list the issues (NM)
     - core/MY_Controller.php updated the render (NM)
     - controllers/Welcome.php updated to allow connection to views/homepage.php 
     and update tasks and create a list of tasks (NM)
+
+## *Version 1.0.3*
+Release Date: 2017-10-14
+    
+### Updated 
+    - config/config.php: changed menu link for 'work' (TE)
+    - models/Tasks.php: added getCategorizedTasks and orderByCategory functions (TE)
+ 
+### Added
+    - views/template_secondary.php: modified the original template to have bootstrap panels for the two organized task lists (TE)
+    - controllers/Views.php: controller for the Work page, handles retrieving and sorting data to be displayed (TE)
+    - view/by_priority.php: the layout for the Tasks by Priority table on the Work page (TE)
+    - view/by_category.php: the layout for the Tasks by Category table on the Work page (TE)
