@@ -1,5 +1,10 @@
-<div class="alert alert-info">{remaining_tasks} tasks are left to do!</div>
+<?php
+/*
+ * Empty by_priority view
+ */
+?>
 
+<h3>Tasks by Priority</h3>
 <table class="table">
     <tr>
         <th>Id</th>
@@ -12,5 +17,5 @@
         <td>{task}</td>
         <td>{priority}</td>
     </tr>
-    {/display_tasks}
+    {/display_tasks}    
 </table>
