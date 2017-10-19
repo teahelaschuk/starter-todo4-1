@@ -51,3 +51,16 @@ Release Date: 2017-10-15
 ### Updated 
     - config/autoload.php updated path to parsedown.php library (NM)
     - config/config.php corrected path to helpme.php
+    
+## *Version 1.0.5*
+Release Date: 2017-10-19
+
+### Added
+    - views/itemlist.php setup an itemlist to display in the Maintance tab (NM)
+    - views/oneitem.php setup a different way to display in Maintance tab (NM)
+    - controllers/Mtce.php Controller to control Maintance Tab (MN)
+### Updated 
+    - config/config.php added Mtce controller to the connection to Maintance (NM)
+    - views/template_secondary.php corrected bootstrap error
+    - README.md updated with the correct update
+    
