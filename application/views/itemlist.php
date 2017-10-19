@@ -4,7 +4,7 @@
  */
 ?>
 
-
+{pagination}
 <table class="table">
     <tr>
         <th>Id</th>

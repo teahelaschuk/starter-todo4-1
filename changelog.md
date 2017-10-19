@@ -51,8 +51,11 @@ Release Date: 2017-10-15
 ### Updated 
     - config/autoload.php updated path to parsedown.php library (NM)
     - config/config.php corrected path to helpme.php
+
+## *Version 1.1*
+Release Date: 2017-10-15
     
-## *Version 1.0.5*
+## *Version 1.1.1*
 Release Date: 2017-10-19
 
 ### Added
@@ -63,4 +66,13 @@ Release Date: 2017-10-19
     - config/config.php added Mtce controller to the connection to Maintance (NM)
     - views/template_secondary.php corrected bootstrap error
     - README.md updated with the correct update
+   
+## *Version 1.1.6*
+Release Date: 2017-10-19
+
+### Added
+    - views/itemnav.php: created pagination navbar (TE)
+### Updated 
+    - controllers/Mtce.php: added functionality for showing a number of items per page (TE)
+    - views/itemlist.php: placed pagination navbar above table to be displayed in maintenance page (TE)
     
