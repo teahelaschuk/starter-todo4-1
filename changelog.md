@@ -67,7 +67,7 @@ Release Date: 2017-10-19
     - views/template_secondary.php corrected bootstrap error
     - README.md updated with the correct update
    
-## *Version 1.1.6*
+## *Version 1.1.2*
 Release Date: 2017-10-19
 
 ### Added
@@ -76,3 +76,15 @@ Release Date: 2017-10-19
     - controllers/Mtce.php: added functionality for showing a number of items per page (TE)
     - views/itemlist.php: placed pagination navbar above table to be displayed in maintenance page (TE)
     
+## *Version 1.1.3*
+Release Date: 2017-10-19
+
+### Added
+    - tmp folder to put session data in (NM)
+    - controllers/Roles.php allowed for roles to be used. (NM)
+### Updated 
+    - controllers/Mtce.php updated to allow users to display on the maintance page (NM)
+    - gitignore added everything that appears in tmp folder to git ignore (NM)
+    - config/config.php added ability to have sessions (NM)
+    - config/autoload.php pulled in sessions in the library (NM)
+    - config/constant.php added the two usuers guest and owner (NM)
