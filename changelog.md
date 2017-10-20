@@ -100,3 +100,13 @@ Release Date: 2017-10-19
     - core/Memory_Model.php corrected issue that had the wrong variable name (NM)
     - views/by_category.php updated to be able to have boxes to click and allow complete (NM)
     - views/by_priority.php updated to be able to have boxes to click and allow complete (NM)
+
+## *Version 1.1.5*
+Release Date: 2017-10-19
+
+### Added
+    - views/oneitemx.php: variation of oneitem.php - links item ID to the edit page (TE)
+    - views/itemadd.php: the create new item button for owners (TE)
+
+### Updated 
+    - controllers/Mtce.php: updated page to have different functionality depending on the user role (TE)
