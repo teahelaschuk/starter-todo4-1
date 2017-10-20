@@ -88,3 +88,15 @@ Release Date: 2017-10-19
     - config/config.php added ability to have sessions (NM)
     - config/autoload.php pulled in sessions in the library (NM)
     - config/constant.php added the two usuers guest and owner (NM)
+    
+## *Version 1.1.4*
+Release Date: 2017-10-19
+
+### Added
+
+### Updated 
+    - config/config.php changed the session save path to correct issue (NM)
+    - cotrollers/Views.php Added new functionality complete() and ability to complete tasks (NM)
+    - core/Memory_Model.php corrected issue that had the wrong variable name (NM)
+    - views/by_category.php updated to be able to have boxes to click and allow complete (NM)
+    - views/by_priority.php updated to be able to have boxes to click and allow complete (NM)
