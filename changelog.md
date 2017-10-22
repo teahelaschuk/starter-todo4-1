@@ -123,3 +123,12 @@ Release Date: 2017-10-20
     - models/Tasks.php: added form validation rules (TE)
     - controllers/Mtce.php: added functions add(), edit(), showit(), submit(), cancel(), and delete() (TE)
 
+## *Version 1.1.7*
+Release Date: 2017-10-22
+
+### Added
+    
+
+### Updated 
+    - views/itemedit.php added new properties to todo tasks edit form (NM)
+    - controllers/Mtce.php added code to allow size group and status to be added in the showit() (NM)
