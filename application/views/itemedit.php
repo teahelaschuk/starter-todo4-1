@@ -11,6 +11,9 @@
     {ftask}
     {fpriority}
     {zsubmit}
+    {fsize}
+    {fgroup}
+    {fstatus}
 </form>
     {error}
 <a href="/mtce/cancel"><input type="button" value="Cancel the current edit"/></a>
