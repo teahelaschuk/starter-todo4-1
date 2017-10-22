@@ -110,3 +110,16 @@ Release Date: 2017-10-19
 
 ### Updated 
     - controllers/Mtce.php: updated page to have different functionality depending on the user role (TE)
+
+## *Version 1.1.6*
+Release Date: 2017-10-20
+
+### Added
+    - views/itemedit.php: page layout for editing a task (TE)
+
+### Updated 
+    - models/App.php: bug fix, provided default values for work methods (TE)
+    - core/Memory_Model.php: bug fix, altered highest() function (TE)
+    - models/Tasks.php: added form validation rules (TE)
+    - controllers/Mtce.php: added functions add(), edit(), showit(), submit(), cancel(), and delete() (TE)
+
