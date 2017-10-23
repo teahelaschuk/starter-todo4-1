@@ -51,3 +51,84 @@ Release Date: 2017-10-15
 ### Updated 
     - config/autoload.php updated path to parsedown.php library (NM)
     - config/config.php corrected path to helpme.php
+
+## *Version 1.1*
+Release Date: 2017-10-15
+    
+## *Version 1.1.1*
+Release Date: 2017-10-19
+
+### Added
+    - views/itemlist.php setup an itemlist to display in the Maintance tab (NM)
+    - views/oneitem.php setup a different way to display in Maintance tab (NM)
+    - controllers/Mtce.php Controller to control Maintance Tab (MN)
+### Updated 
+    - config/config.php added Mtce controller to the connection to Maintance (NM)
+    - views/template_secondary.php corrected bootstrap error
+    - README.md updated with the correct update
+   
+## *Version 1.1.2*
+Release Date: 2017-10-19
+
+### Added
+    - views/itemnav.php: created pagination navbar (TE)
+### Updated 
+    - controllers/Mtce.php: added functionality for showing a number of items per page (TE)
+    - views/itemlist.php: placed pagination navbar above table to be displayed in maintenance page (TE)
+    
+## *Version 1.1.3*
+Release Date: 2017-10-19
+
+### Added
+    - tmp folder to put session data in (NM)
+    - controllers/Roles.php allowed for roles to be used. (NM)
+### Updated 
+    - controllers/Mtce.php updated to allow users to display on the maintance page (NM)
+    - gitignore added everything that appears in tmp folder to git ignore (NM)
+    - config/config.php added ability to have sessions (NM)
+    - config/autoload.php pulled in sessions in the library (NM)
+    - config/constant.php added the two usuers guest and owner (NM)
+    
+## *Version 1.1.4*
+Release Date: 2017-10-19
+
+### Added
+
+### Updated 
+    - config/config.php changed the session save path to correct issue (NM)
+    - cotrollers/Views.php Added new functionality complete() and ability to complete tasks (NM)
+    - core/Memory_Model.php corrected issue that had the wrong variable name (NM)
+    - views/by_category.php updated to be able to have boxes to click and allow complete (NM)
+    - views/by_priority.php updated to be able to have boxes to click and allow complete (NM)
+
+## *Version 1.1.5*
+Release Date: 2017-10-19
+
+### Added
+    - views/oneitemx.php: variation of oneitem.php - links item ID to the edit page (TE)
+    - views/itemadd.php: the create new item button for owners (TE)
+
+### Updated 
+    - controllers/Mtce.php: updated page to have different functionality depending on the user role (TE)
+
+## *Version 1.1.6*
+Release Date: 2017-10-20
+
+### Added
+    - views/itemedit.php: page layout for editing a task (TE)
+
+### Updated 
+    - models/App.php: bug fix, provided default values for work methods (TE)
+    - core/Memory_Model.php: bug fix, altered highest() function (TE)
+    - models/Tasks.php: added form validation rules (TE)
+    - controllers/Mtce.php: added functions add(), edit(), showit(), submit(), cancel(), and delete() (TE)
+
+## *Version 1.1.7*
+Release Date: 2017-10-22
+
+### Added
+    
+
+### Updated 
+    - views/itemedit.php added new properties to todo tasks edit form (NM)
+    - controllers/Mtce.php added code to allow size group and status to be added in the showit() (NM)
