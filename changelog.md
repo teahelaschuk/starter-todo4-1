@@ -132,3 +132,16 @@ Release Date: 2017-10-22
 ### Updated 
     - views/itemedit.php added new properties to todo tasks edit form (NM)
     - controllers/Mtce.php added code to allow size group and status to be added in the showit() (NM)
+
+## *Version 1.2.1*
+Release Date: 2017-11-02
+
+### Added
+    - phpunit.xml.dist copied from github (NM)
+    - tests/ setup foulder(NM)
+    - tests/Bootstrap.php copied public/index (NM)
+    - model/Entity.php added set functions for each task (NM
+
+### Updated 
+
+
