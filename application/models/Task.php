@@ -11,21 +11,53 @@ Class Task extends Entity {
 
     //id,task,priority,size,group,deadline,status,flag
 
+
+
     public $id, $task, $priority, $size, $group, $deadline, $status, $flag;
     public function setId($value) {
         $this->id = $value;
     }
     public function setTask($value) {
-        $this->task = $value;
+        if(sizeof($value) < 65){
+            $this->task = $value;
+        } else{
+            trigger_error("Max length needs to be 65", E_USER_ERROR);
+        }
     }
     public function setPriority ($value) {
-        $this->priority = $value;
+        if(is_int($value)) {
+            if($value < 4) {
+                $this->priority = $value;
+            }else{
+                trigger_error("needs to be less then 4", E_USER_ERROR);
+            }
+        } else{
+            trigger_error("needs to be an int", E_USER_ERROR);
+        }
     }
     public function setSize($value) {
-        $this->size = $value;
+        if(is_int($value)) {
+            if($value < 4) {
+                $this->size = $value;
+            }else{
+                trigger_error("needs to be less then 4", E_USER_ERROR);
+            }
+        } else{
+            trigger_error("needs to be an int", E_USER_ERROR);
+        }
+
     }
     public function setGroup($value) {
-        $this->group = $value;
+        if(is_int($value)) {
+            if($value < 5) {
+                $this->group = $value;
+            }else{
+                trigger_error("needs to be less then 5", E_USER_ERROR);
+            }
+        } else{
+            trigger_error("needs to be an int", E_USER_ERROR);
+        }
+
 
     }
     public function setDeadline($value) {
