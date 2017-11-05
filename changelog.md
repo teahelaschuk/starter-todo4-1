@@ -140,8 +140,18 @@ Release Date: 2017-11-02
     - phpunit.xml.dist copied from github (NM)
     - tests/ setup foulder(NM)
     - tests/Bootstrap.php copied public/index (NM)
-    - model/Entity.php added set functions for each task (NM
+    - model/Entity.php added set functions for each task (NM)
+    - model/Task.php added new magic tasks functionality (NM)
 
 ### Updated 
 
+
+## *Version 1.2.2*
+Release Date: 2017-11-05
+
+### Added
+
+
+### Updated
+    - model/Task.php updated rules to tasks
 
