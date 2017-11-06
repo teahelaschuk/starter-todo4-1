@@ -6,7 +6,7 @@
  * Time: 3:48 PM
  */
 
-
+require_once APPPATH . 'core/Entity.php';
 Class Task extends Entity {
 
     //id,task,priority,size,group,deadline,status,flag
@@ -18,10 +18,10 @@ Class Task extends Entity {
         $this->id = $value;
     }
     public function setTask($value) {
-        if(sizeof($value) < 65){
+        if(strlen($value) < 65){
             $this->task = $value;
-        } else{
-            trigger_error("Max length needs to be 65", E_USER_ERROR);
+        } else {
+            return;
         }
     }
     public function setPriority ($value) {
@@ -29,10 +29,10 @@ Class Task extends Entity {
             if($value < 4) {
                 $this->priority = $value;
             }else{
-                trigger_error("needs to be less then 4", E_USER_ERROR);
+                return;
             }
         } else{
-            trigger_error("needs to be an int", E_USER_ERROR);
+            return;
         }
     }
     public function setSize($value) {
@@ -40,10 +40,10 @@ Class Task extends Entity {
             if($value < 4) {
                 $this->size = $value;
             }else{
-                trigger_error("needs to be less then 4", E_USER_ERROR);
+                return;
             }
         } else{
-            trigger_error("needs to be an int", E_USER_ERROR);
+            return;
         }
 
     }
@@ -52,10 +52,10 @@ Class Task extends Entity {
             if($value < 5) {
                 $this->group = $value;
             }else{
-                trigger_error("needs to be less then 5", E_USER_ERROR);
+                return;
             }
         } else{
-            trigger_error("needs to be an int", E_USER_ERROR);
+            return;
         }
 
 
