@@ -6,12 +6,33 @@
  * and open the template in the editor.
  */
 class Tasks extends CSV_Model {
+        public $completed, $uncompleted;
 
         public function __construct()
         {
                 parent::__construct(APPPATH . '../data/tasks.csv', 'id');
         }
-        
+        function getCompletedTask(){
+            $this->completed = 0;
+            foreach ($this->all() as $task){
+                if($task->status == 2){
+                    $this->completed ++;
+                }
+            }
+            return $this->completed;
+
+
+        }
+        function getUncompletedTask(){
+            $this->uncompleted = 0;
+            foreach ($this->all() as $task){
+                if($task->status != 2){
+                    $this->uncompleted ++;
+                }
+            }
+            return $this->uncompleted;
+
+        }
         function getCategorizedTasks()
         {
             // extract the undone tasks
