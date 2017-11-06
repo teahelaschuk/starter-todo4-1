@@ -173,3 +173,11 @@ Release Date: 2017-11-05
 
 ### Updated
     - models/Tasks.php added a count to count completed and uncompleted tasks(NM)
+
+## *Version 1.2.4*
+Release Date: 2017-11-05
+
+### Added
+    - .travis.yml: added travis CI file (TE)
+
+
