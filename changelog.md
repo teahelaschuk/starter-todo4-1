@@ -153,7 +153,7 @@ Release Date: 2017-11-05
 
 
 ### Updated
-    - model/Task.php updated rules to tasks
+    - model/Task.php updated rules to tasks (NM)
 
 ## *Version 1.2.3*
 Release Date: 2017-11-05
@@ -165,3 +165,11 @@ Release Date: 2017-11-05
     - moved Entity.php from models folder to core folder and updated references to Entity.php in autoload.php and Task.php (TE)
     - models/Task.php: altered several methods to return on failure rather than throw errors (TE)
 
+## *Version 1.2.4*
+Release Date: 2017-11-05
+
+### Added
+    - tests/TaskListTest.php: created phpunit testing file with functions for checking form validation (NM)
+
+### Updated
+    - models/Tasks.php added a count to count completed and uncompleted tasks(NM)
