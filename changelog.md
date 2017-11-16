@@ -180,4 +180,12 @@ Release Date: 2017-11-05
 ### Added
     - .travis.yml: added travis CI file (TE)
 
+## *Version 1.2.5*
+Release Date: 2017-11-16
+
+### Added
+
+DATA
+    - added tasks xml file 
+
 
