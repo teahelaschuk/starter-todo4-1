@@ -67,22 +67,24 @@ Class XML_Model extends Memory_Model {
         $this->reindex();
 
     }
-    protected function store(){
-        $string = "<tasks> \n";
-        $this->reindex();
-        if(file_exists($this->_origin)){
-            $tasks = simplexml_load_file($this->_origin);
-
-            foreach($this->_data as $key => $record){
-                for ($i = 0; $i < count($this->_fields); $i ++ ) {
-                    $string = $string + "<task> \n";
+    protected function store()
+    {
+        $xml = new SimpleXMLElement("<tasks></tasks>");
+        if (file_exists($this->_origin)) {
+            foreach ($this->_data as $key => $record) {
+                $holdtask = $xml->addChild("task");
+                for ($i = 0; $i < count($this->_fields); $i++) {
+                    if ($this->_fields[$i] === "task") {
+                        $holdtask->addChild("name", $record->{$this->_fields[$i]});
+                    } else {
+                        $holdtask->addChild($this->_fields[$i], $record->{$this->_fields[$i]});
+                    }
 
                 }
-
-
             }
+            $xml->asXml($this->_origin);
         }
-
     }
+
 
 }
