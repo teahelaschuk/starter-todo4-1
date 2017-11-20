@@ -188,4 +188,12 @@ Release Date: 2017-11-16
 DATA
     - added tasks xml file 
 
+## *Version 1.2.6*
+Release Date: 2017-11-19
 
+### Added
+    - core/XML_Model.php added new access to the xml tasks (NM)
+    
+### Updated
+    - models/Tasks.php extended xml(NM)
+    - core/My_Model.php added XML_Model to it(NM)

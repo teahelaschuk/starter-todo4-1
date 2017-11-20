@@ -5,12 +5,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-class Tasks extends CSV_Model {
+class Tasks extends XML_Model {
         public $completed, $uncompleted;
 
         public function __construct()
         {
-                parent::__construct(APPPATH . '../data/tasks.csv', 'id');
+                parent::__construct(APPPATH . '../data/tasks.xml', 'id');
         }
         function getCompletedTask(){
             $this->completed = 0;
