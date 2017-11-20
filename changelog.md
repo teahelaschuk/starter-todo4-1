@@ -132,3 +132,68 @@ Release Date: 2017-10-22
 ### Updated 
     - views/itemedit.php added new properties to todo tasks edit form (NM)
     - controllers/Mtce.php added code to allow size group and status to be added in the showit() (NM)
+
+## *Version 1.2.1*
+Release Date: 2017-11-02
+
+### Added
+    - phpunit.xml.dist copied from github (NM)
+    - tests/ setup foulder(NM)
+    - tests/Bootstrap.php copied public/index (NM)
+    - model/Entity.php added set functions for each task (NM)
+    - model/Task.php added new magic tasks functionality (NM)
+
+### Updated 
+
+
+## *Version 1.2.2*
+Release Date: 2017-11-05
+
+### Added
+
+
+### Updated
+    - model/Task.php updated rules to tasks (NM)
+
+## *Version 1.2.3*
+Release Date: 2017-11-05
+
+### Added
+    - tests/TaskTest.php: created phpunit testing file with functions for checking form validation
+
+### Updated
+    - moved Entity.php from models folder to core folder and updated references to Entity.php in autoload.php and Task.php (TE)
+    - models/Task.php: altered several methods to return on failure rather than throw errors (TE)
+
+## *Version 1.2.4*
+Release Date: 2017-11-05
+
+### Added
+    - tests/TaskListTest.php: created phpunit testing file with functions for checking form validation (NM)
+
+### Updated
+    - models/Tasks.php added a count to count completed and uncompleted tasks(NM)
+
+## *Version 1.2.4*
+Release Date: 2017-11-05
+
+### Added
+    - .travis.yml: added travis CI file (TE)
+
+## *Version 1.2.5*
+Release Date: 2017-11-16
+
+### Added
+
+DATA
+    - added tasks xml file 
+
+## *Version 1.2.6*
+Release Date: 2017-11-19
+
+### Added
+    - core/XML_Model.php added new access to the xml tasks (NM)
+    
+### Updated
+    - models/Tasks.php extended xml(NM)
+    - core/My_Model.php added XML_Model to it(NM)
